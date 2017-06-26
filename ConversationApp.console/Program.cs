@@ -10,6 +10,9 @@ namespace ConversationApp.console
     {
         static void Main(string[] args)
         {
+            Interfaces.IQuestionaire questionaire = new Services.QuestionaireService();
+            questionaire.askQuestion();
+            Console.ReadKey();
         }
     }
 }
